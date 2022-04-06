@@ -426,7 +426,8 @@
             <div class="footer-mailing-section">
                 <p class="footer-mailing-section-title">Подпишитесь на рассылку</p>
                 <div class="form-field-mailing-section">
-                    <input type="email" name="email" placeholder="E-mail" class="form-field-input footer">
+                    <label for="mailing-section"></label>
+                    <input type="email" name="email" placeholder="E-mail" id="mailing-section" class="form-field-input footer">
                     <button type="submit" class="button footer-mail-submit">Подписаться
                         <svg class="footer-mail-submit-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-icon-send">
@@ -453,31 +454,45 @@
             <div class="form">
                 <div class="form-field">
                     <label for="name" class="form-field-title">Имя</label>
-                    <input type="name" name="name" id="name" class="form-field-input">
+                    <div class="form-field-input-area">
+                        <input type="name" name="name" id="name" class="form-field-input">
+                        <svg class="form-field-input-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-modal-user"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-field">
                     <label for="tel" class="form-field-title">Телефон</label>
-                    <input type="tel" name="tel" id="tel" class="form-field-input">
+                    <div class="form-field-input-area">
+                        <input type="tel" name="tel" id="tel" class="form-field-input">
+                        <svg class="form-field-input-icon" width="13" height="13">
+                            <use href="./images/icons.svg#icon-modal-phone"></use>
+                        </svg>
+                    </div>                    
                 </div>
                 <div class="form-field">
                     <label for="email" class="form-field-title">Почта</label>
-                    <input type="email" name="email" id="email" class="form-field-input">
+                    <div class="form-field-input-area">
+                        <input type="email" name="email" id="email" class="form-field-input">
+                        <svg class="form-field-input-icon" width="15" height="12">
+                            <use href="./images/icons.svg#icon-modal-mail"></use>
+                        </svg>
+                    </div>                    
                 </div>
                 <div class="form-field">
                     <label for="feedback" class="form-field-title">Комментарий</label>
                     <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Введите текст"
-                        class="form-field-input"></textarea>
+                        class="form-field-input"></textarea>                  
                 </div>
             </div>
-            <div class="form-field policy">
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy" class="policy">Соглашаюсь с рассылкой и принимаю <a href="#"
-                        class="policy-link">Условия договора</a></label>
+            <div class="form-field policy">                
+                <label class="policy">
+                    <input type="checkbox" name="policy" class="checkbox visually-hidden">
+                    <span class="checkbox-icon"></span>
+                    Соглашаюсь с рассылкой и принимаю<a href="#"class="policy-link">Условия договора</a>
+                </label>
             </div>
             <button type="submit" class="button submit">Отправить</button>
-
-
-
         </div>
     </div>
     <script src="./js/modal.js"></script>
